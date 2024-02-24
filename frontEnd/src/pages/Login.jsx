@@ -1,5 +1,5 @@
 import React from "react";
-import './loginreg.css'
+import './loginreg.css';
 import Register from './Register'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 

@@ -2,6 +2,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './Home'
 import Login  from './pages/Login'
 import Register  from './pages/Register'
+// import Navbar from './Components/Navbar'
 
 function App() {
 
