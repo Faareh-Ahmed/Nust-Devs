@@ -1,4 +1,5 @@
 import React from "react";
+import Image1 from "../images/bg-destinations.jpg"
 
 function HomePg() {
     return (
