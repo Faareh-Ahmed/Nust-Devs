@@ -1,5 +1,5 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Register from './Register'
+import Register from './pages/Register'
 import Home from './Home'
 
 function App() {
