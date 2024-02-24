@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./../images/logo2.png";
 function Navbar() {
     return (
-        <div>
+        <div> 
             <header
                 class="bg-gradient-to-b from-slate-600 via-slate-300 to-transparent opacity-80 text-xl font-serif font-bold">
                 <nav class="mx-auto flex max-w-7xl items-center justify-between px-2 pt-2  lg:px-8" aria-label="Global">

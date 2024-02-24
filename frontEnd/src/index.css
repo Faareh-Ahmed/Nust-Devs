@@ -11,3 +11,7 @@
 .bg-img-main{
   background: url("./images/bg-destinations.jpg") center/cover no-repeat border-box ;
 }
+
+.h-main{
+  height: 80vh;
+}
