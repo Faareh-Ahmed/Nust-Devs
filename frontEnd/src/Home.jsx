@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import './index.css';
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import HomePg from "./components/home-pg";
 import bgImg from "./images/bg-destinations.jpg"
 
