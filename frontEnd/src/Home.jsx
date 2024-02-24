@@ -1,24 +1,34 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import './index.css';
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import HomePg from "./components/home-pg";
 import bgImg from "./images/bg-destinations.jpg"
 
-// const axios = require('axios');
+import axios from 'axios';
 
-// const options = {
-//     method: 'GET',
-//     url: 'https://place-autocomplete1.p.rapidapi.com/autocomplete/json',
-//     params: {
-//       input: 'new',
-//       radius: '500'
-//     },
-//     headers: {
-//       'X-RapidAPI-Key': '79e636b089msh997aa1c461e0614p10c0cbjsn8c62dd36bb3c',
-//       'X-RapidAPI-Host': 'place-autocomplete1.p.rapidapi.com'
-//     }
-//   };
+
+const options = {
+  method: 'GET',
+  url: 'https://trueway-places.p.rapidapi.com/FindPlacesNearby',
+  params: {
+    location: '37.783366,-122.402325',
+    type: 'cafe',
+    radius: '180',
+    language: 'en'
+  },
+  headers: {
+    'X-RapidAPI-Key': '79e636b089msh997aa1c461e0614p10c0cbjsn8c62dd36bb3c',
+    'X-RapidAPI-Host': 'trueway-places.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}
 
 function Home() {
 
