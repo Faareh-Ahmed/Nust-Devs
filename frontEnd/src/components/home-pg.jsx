@@ -16,6 +16,7 @@
 
 // MainPage.js
 import React from 'react';
+import Maps from './Maps';
 
 const MainPage = () => {
   return (
@@ -25,6 +26,8 @@ const MainPage = () => {
           Travel the World with Jet-Set Journey
         </h1>
       </div>
+
+      {/* <Maps/> */}
 
     </div>
   );
