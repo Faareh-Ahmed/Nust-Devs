@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .bg-img {
-  background-position: center;
+  background-position: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .bg-img-main{
-  background: url(./images/bg-destinations.jpg) ;
+  background: url("./images/bg-destinations.jpg") center/cover no-repeat border-box ;
 }
