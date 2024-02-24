@@ -1,10 +1,14 @@
 import React from "react";
+import Image1 from "../images/bg-destinations.jpg"
 
-function HomePg ()
-{
+function HomePg() {
     return (
         <div className="">
-Hello
+            <img
+                src={Image1}
+                alt="Hero Background"
+                className="absolute h-full w-full object-cover"
+            />        
         </div>
     )
 }
