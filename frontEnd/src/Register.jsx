@@ -1,7 +1,11 @@
 import React from 'react';
+import axios from 'axios'
 import './index.css'
 
 function Register(){
+
+    
+
     return ( 
         <div>
              <div className="main-container">
