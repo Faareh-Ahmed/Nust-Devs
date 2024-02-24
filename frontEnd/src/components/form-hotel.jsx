@@ -4,22 +4,22 @@ const Form = () => {
     return (
         <div className="-mt-12 rounded-3xl shadow-3xl custom-shadow bg-white w-3/4">
             <div className="h-12 bg-slate-300 rounded-tr-3xl rounded-tl-3xl flex justify-evenly">
-                <div className="bg-slate-200 w-1/3 h-full rounded-tl-3xl flex justify-center items-center">Book a Hotel</div>
+                <div className="hover:bg-slate-200 w-1/3 h-full rounded-tl-3xl flex justify-center items-center">Book a Hotel</div>
                 <div className=" hover:bg-slate-200 w-1/3 h-full  flex justify-center items-center">Book a Flight</div>
                 <div className=" hover:bg-slate-200 w-1/3 h-full hover:rounded-tr-3xl flex justify-center items-center">Book a Bus</div>
             </div>
-            <div className="flex items-center justify-center flex-row">
-                <div className="w-1/4 bg-slate-500 rounded-bl-3xl flex flex-col justify-center items-center text-white h-full">
-                    <div className="steps h-1/4">
-                        <p className="steps-p ml-4 pr-3">Hotels Information</p>
+            <div className="flex justify-center flex-row  h-full ">
+                <div className="w-1/4  mt-4 rounded-bl-3xl items-center   bg-slate-300  ">
+                    <div className="steps h-1/4 hover:bg-slate-200">
+                        <p className="steps-p ml-4 pr-3 ">Hotels Information</p>
                     </div>
-                    <div className="steps h-1/4">
+                    <div className="steps h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4">Available Hotels</p>
                     </div>
-                    <div className="steps  h-1/4">
+                    <div className="steps  h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4">Suite Selection</p>
                     </div>
-                    <div className="steps  h-1/4">
+                    <div className="steps  h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4">Summary</p>
                     </div>
                 </div>
