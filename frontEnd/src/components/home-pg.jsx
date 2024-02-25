@@ -16,7 +16,7 @@
 
 // MainPage.js
 import React from 'react';
-import Maps from './Maps';
+// import Maps from './Maps';
 
 const MainPage = () => {
   return (
