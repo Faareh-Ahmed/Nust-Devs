@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Assuming you are using React Router
+import { Link } from 'react-router-dom'; 
 import axios from 'axios';
 
 function Register() {
@@ -22,9 +22,9 @@ function Register() {
 
         try {
             const response = await axios.post('http://localhost:5000/api/auth/register', formData);
-            console.log(response.data); // Display success message or redirect
+            console.log(response.data); 
         } catch (error) {
-            console.error(error); // Display error message
+            console.error(error); 
         }
     };
 
