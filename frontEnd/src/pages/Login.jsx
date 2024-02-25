@@ -5,9 +5,24 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function Login() {
 
-    function check(){
-        console.log("Clicked");
-    }
+    const handleLoginSubmit = async (event) => {
+        event.preventDefault();
+    
+        const { email, password } = event.target.elements;
+    
+        try {
+          const response = await axios.post('/api/auth/login', {
+            email,
+            password,
+          });
+    
+          console.log(response.data); // Store authentication token or redirect
+        } catch (error) {
+          console.error(error); // Display error message
+        }
+      };
+
+      
     return (
         <div className="main-container">
             <div className="container">
