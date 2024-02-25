@@ -1,5 +1,6 @@
 import React from 'react';
 import './loginreg.css'
+import login from './Login'
 function Register() {
 
     const handleRegisterSubmit = async (event) => {
@@ -32,11 +33,11 @@ function Register() {
                     </div>
                     <form className="form-grid">
                         <div className="form-input-container">
-                            <label for="first-name" className="form-input-label">First Name</label>
+                            <label for="firstName" className="form-input-label">First Name</label>
                             <input type="text" id="first-name" className="form-input" placeholder="Enter your First Name" autocomplete="off" />
                         </div>
                         <div className="form-input-container">
-                            <label for="last-name" className="form-input-label">Last Name</label>
+                            <label for="lastName" className="form-input-label">Last Name</label>
                             <input type="text" id="last-name" className="form-input" placeholder="Enter your Last Name" autocomplete="off" />
                         </div>
                         <div className="form-input-container">
@@ -59,7 +60,7 @@ function Register() {
                         </div>
                         <button type="submit" className="form-input-submit col-span-2"  onClick={handleRegisterSubmit}>Register</button>
                         <div className="to-login-page col-span-2">
-                            <p>Already have an account? Click here to <a href="login.html">Log In</a></p>
+                            <p>Already have an account? Click here to <Link to="/login">Login</Link></p>
                         </div>
                     </form>
                 </div>
