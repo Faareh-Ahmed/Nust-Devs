@@ -1,26 +1,22 @@
 import React from "react";
+import plan1 from "./../images/plan-1.jpg";
+import plan2 from "./../images/plan-2.jpg";
+import plan3 from "./../images/plan-3.jpg";
+
 
 const Plan = () => {
     return (
-        <div>
-            <h1>Start Planning Your Next Trip</h1>
+        <div className="mt-10 bg-img-plan">
+            <h1 className="flex justify-center text-5xl text-white font-mono font-bold">Start Planning Your Next Trip</h1>
             <div className="overflow-x-auto flex py-4">
-                <div className="cursor-pointer rounded-xl bg-white shadow-lg border-gray-200 hover:shadow-xl min-w-self ml-2">
-                    <div className="relative flex items-end overflow-hidden rounded-xl">
-                        <img className="w-full h-48" src="https://thumbnails.production.thenounproject.com/gA9eZOvsBYSHrMumgrslmRGoBto=/fit-in/1000x1000/photos.production.thenounproject.com/photos/BCBA88B6-5B41-4B50-A786-E60CAA0ECDA3.jpg"
+                <div className="cursor-pointer rounded-xl bg-white shadow-lg border-gray-200 hover:shadow-xl min-w-self ml-2 flex flex-col">
+                    <div className="relative flex items-end overflow-hidden rounded-xl ">
+                        <img className="w-full h-48" src={plan1}
                             alt="wallpaper" />
                     </div>
                     <div className="mt-1 p-2">
-                        <h2 className="text-slate-700">The Malta Hotel</h2>
-                        <p className="my-1 text-sm text-slate-400">Italy, Europe</p>
-                        <div className="text-xs p-1 border-t-2 border-b-2 border-gray-200">
-                            Free WiFi
-                        </div>
-                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-200">
-                            Swimming Pool
-                        </div>
-                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-200">
-                            BreakFast
+                        <h2 className="text-slate-700 text-xl font-extrabold">Explore Our Destinations</h2>
+                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-300 mt-20">
                         </div>
                         <div className="mt-3 flex items-end justify-between">
                             <p>
@@ -30,22 +26,14 @@ const Plan = () => {
                         </div>
                     </div>
                 </div>
-                <div className="cursor-pointer rounded-xl bg-white shadow-lg border-gray-200 hover:shadow-xl min-w-self ml-2">
-                    <div className="relative flex items-end overflow-hidden rounded-xl">
-                        <img className="w-full h-48" src="https://thumbnails.production.thenounproject.com/gA9eZOvsBYSHrMumgrslmRGoBto=/fit-in/1000x1000/photos.production.thenounproject.com/photos/BCBA88B6-5B41-4B50-A786-E60CAA0ECDA3.jpg"
+                <div className="cursor-pointer rounded-xl bg-white shadow-lg border-gray-200 hover:shadow-xl min-w-self ml-2 flex flex-col">
+                    <div className="relative flex items-end overflow-hidden rounded-xl ">
+                        <img className="w-full h-48" src={plan2}
                             alt="wallpaper" />
                     </div>
                     <div className="mt-1 p-2">
-                        <h2 className="text-slate-700">The Malta Hotel</h2>
-                        <p className="my-1 text-sm text-slate-400">Italy, Europe</p>
-                        <div className="text-xs p-1 border-t-2 border-b-2 border-gray-200">
-                            Free WiFi
-                        </div>
-                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-200">
-                            Swimmming Pool
-                        </div>
-                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-200">
-                            BreakFast
+                        <h2 className="text-slate-700 text-xl font-extrabold">Your Perfect Holiday Awaits</h2>
+                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-300 mt-20">
                         </div>
                         <div className="mt-3 flex items-end justify-between">
                             <p>
@@ -55,22 +43,14 @@ const Plan = () => {
                         </div>
                     </div>
                 </div>
-                <div className="cursor-pointer rounded-xl bg-white shadow-lg border-gray-200 hover:shadow-xl min-w-self ml-2">
-                    <div className="relative flex items-end overflow-hidden rounded-xl">
-                        <img className="w-full h-48" src="https://thumbnails.production.thenounproject.com/gA9eZOvsBYSHrMumgrslmRGoBto=/fit-in/1000x1000/photos.production.thenounproject.com/photos/BCBA88B6-5B41-4B50-A786-E60CAA0ECDA3.jpg"
+                <div className="cursor-pointer rounded-xl bg-white shadow-lg border-gray-200 hover:shadow-xl min-w-self ml-2 flex flex-col">
+                    <div className="relative flex items-end overflow-hidden rounded-xl ">
+                        <img className="w-full h-48" src={plan3}
                             alt="wallpaper" />
                     </div>
                     <div className="mt-1 p-2">
-                        <h2 className="text-slate-700">The Malta Hotel</h2>
-                        <p className="my-1 text-sm text-slate-400">Italy, Europe</p>
-                        <div className="text-xs p-1 border-t-2 border-b-2 border-gray-200">
-                            Free WiFi
-                        </div>
-                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-200">
-                            Swimmming Pool
-                        </div>
-                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-200">
-                            BreakFast
+                        <h2 className="text-slate-700 text-xl font-extrabold">Travel Requirements</h2>
+                        <div className="text-xs p-1 border-t-0 border-b-2 border-gray-300 mt-20">
                         </div>
                         <div className="mt-3 flex items-end justify-between">
                             <p>

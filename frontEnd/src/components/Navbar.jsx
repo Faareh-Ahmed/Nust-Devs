@@ -12,14 +12,12 @@ const Navbar = () => {
         </div>
         <div className="pt-4">
           <ul className="flex justify-around items-center">
-            <li className='px-4'><a href="home.html">Home</a></li>
-            <li className='px-4'><a href="hotels.html">Hotels</a></li>
-            <li className='px-4'><a href="flights.html">Flights</a></li>
-            <li className='px-4'><a href="bus.html">Bus</a></li>
-            <li className='px-4'><a href="destinations.html">Popular Destinations</a></li>
-            <li className='px-4'><a href="destinations.html">Umrah</a></li>
-            <li className='px-4'><a href="destinations.html">Hajj</a></li>
-            <li className='px-4'><a href="aboutus.html">About Us</a></li>
+            <li className='px-4'><a href="">Home</a></li>
+            <li className='px-4'><a href="">Bookings</a></li>
+            <li className='px-4'><a href="">Popular Destinations</a></li>
+            <li className='px-4'><a href="">Umrah</a></li>
+            <li className='px-4'><a href="">Hajj</a></li>
+            <li className='px-4'><a href="">About Us</a></li>
           </ul>
         </div>
         <div className="pt-4">
