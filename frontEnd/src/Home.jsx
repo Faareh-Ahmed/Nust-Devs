@@ -6,7 +6,7 @@ import HomePg from "./components/home-pg";
 import Form from "./components/form-hotel";
 import PopularDestinations from "./components/popularDestinations";
 import Plan from "./components/plan";
-// import flightForm from "./components/flight-form"
+import FormFlight from "./components/form-flight"
 
 // import axios from 'axios';
 
@@ -57,7 +57,7 @@ function Home() {
             <Navbar />
             <HomePg />
             <div className="bg-white bg-opacity-90 flex justify-center flex-col items-center pb-10">
-                <Form />
+                <FormFlight />
             </div>
             <div className="flex justify-center flex-col items-center"> 
                 <Plan />
