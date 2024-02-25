@@ -15,8 +15,8 @@ const Navbar = () => {
             <li className='px-4'><a href="">Home</a></li>
             <li className='px-4'><a href="">Bookings</a></li>
             <li className='px-4'><a href="">Popular Destinations</a></li>
-            <li className='px-4'><a href="">Umrah</a></li>
-            <li className='px-4'><a href="">Hajj</a></li>
+            <li className='px-4'><a href="https://www.nusuk.sa/rituals?gad_source=1&gclid=Cj0KCQiAoeGuBhCBARIsAGfKY7x3tW3hkdCGppRfdxy18j1Rg2DIL-nQr_Rd7ANs_hIBvw-8NmvNBj0aAkALEALw_wcB&gclsrc=aw.ds">Umrah</a></li>
+            <li className='px-4'><a href="https://www.nusuk.sa/partners?gad_source=1&gclid=Cj0KCQiAxOauBhCaARIsAEbUSQR3Y7il-wzhzKV0H9rXr-tZSfkNmjY2FxwMMlPeaUhzTQLWPCfbJekaAlvDEALw_wcB&gclsrc=aw.ds">Hajj</a></li>
             <li className='px-4'><a href="">About Us</a></li>
           </ul>
         </div>
