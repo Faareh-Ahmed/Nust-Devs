@@ -22,7 +22,7 @@ const MainPage = () => {
   return (
     <div>
       <div className="flex text-4xl justify-center items-center h-96 text-white font-extrabold">
-        <h1 className="">
+        <h1 className="text-6xl font-mono">
           Travel the World with Jet-Set Journey
         </h1>
       </div>

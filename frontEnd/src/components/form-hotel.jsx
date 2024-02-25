@@ -2,7 +2,7 @@ import React from "react";
 import './../index.css';
 const Form = () => {
     return (
-        <div className="-mt-12 rounded-3xl shadow-3xl custom-shadow bg-white w-3/4">
+        <div className="-mt-12 rounded-3xl shadow-3xl custom-shadow bg-white w-3/4 text-md font-bold">
             <div className="h-12 bg-slate-300 rounded-tr-3xl rounded-tl-3xl flex justify-evenly">
                 <div className="hover:bg-slate-200 w-1/3 h-full rounded-tl-3xl flex justify-center items-center">Book a Hotel</div>
                 <div className=" hover:bg-slate-200 w-1/3 h-full  flex justify-center items-center">Book a Flight</div>

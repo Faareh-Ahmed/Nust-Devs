@@ -1,22 +1,30 @@
-import React from "react";
-import "./loginreg.css";
-import Register from "./Register";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import axios from "axios"; // Import Axios
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom"; 
+import axios from "axios"; 
+import './loginreg.css';
+
 
 function Login() {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  });
+  const navigate = useNavigate();
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   const handleLoginSubmit = async (event) => {
     event.preventDefault();
 
-    const { email, password } = event.target.elements;
-
     try {
-      const response = await axios.post("/api/auth/login", {
-        email,
-        password,
-      });
+      const response = await axios.post("http://localhost:5000/api/auth/login", formData);
 
-      console.log("Login successful:", response.data); // Store authentication token or redirect
+      console.log("Login successful:", response.data); 
+      // Redirect to home page
+      navigate("/");
     } catch (error) {
       console.error("Login failed:", error); // Display error message
     }
@@ -30,28 +38,34 @@ function Login() {
         </div>
         <form className="form-grid" onSubmit={handleLoginSubmit}>
           <div className="form-input-container">
-            <label for="email" className="form-input-label">
+            <label htmlFor="email" className="form-input-label">
               Email
             </label>
             <input
               type="email"
               id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
               className="form-input"
               placeholder="Enter your Email"
-              autocomplete="off"
+              autoComplete="off"
             />
           </div>
           <div className="form-input-container">
-            <label for="password" className="form-input-label">
+            <label htmlFor="password" className="form-input-label">
               Password
             </label>
             <input
               type="password"
               id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
               className="form-input"
               placeholder="Enter your Password"
-              minlength="6"
-              autocomplete="off"
+              minLength="6"
+              autoComplete="off"
             />
           </div>
           <button type="submit" className="form-input-submit col-span-2">
