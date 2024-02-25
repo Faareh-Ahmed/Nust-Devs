@@ -29,3 +29,9 @@
     font-size: 0.9rem;
     transition: all 0.25s ease-out;
 }
+
+.min-w-self{
+  /* min-width: 300px;
+  max-width: 300px; */
+  width:300px;
+}

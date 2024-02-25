@@ -10,7 +10,7 @@ const PopularDestinations = () => {
     return (
         <div className='pt-10 bg-slate-400'>
             <div className="flex text-4xl justify-center items-center font-extrabold text-gray-100 mb-5">
-                <h1 className="text-slate-800 px-4 py-2 pb-4">Popular Destinations</h1>
+                <h1 className="text-slate-800 px-4 py-2 pb-2 text-5xl">Popular Destinations</h1>
             </div>
             <div className="flex justify-center items-center h-screen">
                 <div className="grid grid-cols-3 gap-8 px-6 w-3/4">

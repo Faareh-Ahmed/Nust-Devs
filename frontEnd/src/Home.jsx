@@ -56,11 +56,13 @@ function Home() {
         <div className="bg-img-main">
             <Navbar />
             <HomePg />
-            <div className="bg-white bg-opacity-90 flex justify-center flex-col items-center">
+            <div className="bg-white bg-opacity-90 flex justify-center flex-col items-center pb-10">
                 <Form />
-                <Plan />
-                <PopularDestinations />
             </div>
+            <div className="flex justify-center flex-col items-center"> 
+                <Plan />
+            </div>
+            <PopularDestinations />
 
             <Footer />
         </div>
