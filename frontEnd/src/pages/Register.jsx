@@ -1,6 +1,28 @@
 import React from 'react';
 import './loginreg.css'
 function Register() {
+
+    const handleRegisterSubmit = async (event) => {
+        event.preventDefault();
+    
+        const { firstName, lastName, email, number, password } = event.target.elements;
+    
+        try {
+          const response = await axios.post('/api/auth/register', {
+            firstName,
+            lastName,
+            email,
+            number,
+            password,
+          });
+    
+          console.log(response.data); // Display success message or redirect
+        } catch (error) {
+          console.error(error); // Display error message
+        }
+      };
+
+      
     return (
         <div>
             <div className="main-container">
@@ -35,7 +57,7 @@ function Register() {
                             <label for="confirm-password" className="form-input-label">Confirm Password</label>
                             <input type="password" id="confirm-password" className="form-input" placeholder="Confirm your Password" autocomplete="off" />
                         </div>
-                        <button type="submit" className="form-input-submit col-span-2">Register</button>
+                        <button type="submit" className="form-input-submit col-span-2"  onClick={handleRegisterSubmit}>Register</button>
                         <div className="to-login-page col-span-2">
                             <p>Already have an account? Click here to <a href="login.html">Log In</a></p>
                         </div>
