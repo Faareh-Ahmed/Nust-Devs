@@ -1,5 +1,5 @@
 import React from "react";
-
+import './../index.css';
 const Form = () => {
     return (
         <div className="-mt-12 rounded-3xl shadow-3xl custom-shadow bg-white w-3/4">
@@ -10,16 +10,16 @@ const Form = () => {
             </div>
             <div className="flex justify-center flex-row  h-full">
                 <div className="w-1/4 rounded-bl-3xl items-center bg-slate-300  ">
-                    <div className="steps h-1/4 hover:bg-slate-200">
+                    <div className="flex justify-center items-center h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4 pr-3 ">Hotels Information</p>
                     </div>
-                    <div className="steps h-1/4 hover:bg-slate-200">
+                    <div className="flex justify-center items-center h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4">Available Hotels</p>
                     </div>
-                    <div className="steps  h-1/4 hover:bg-slate-200">
+                    <div className="flex justify-center items-center h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4">Suite Selection</p>
                     </div>
-                    <div className="steps  h-1/4 hover:bg-slate-200">
+                    <div className="flex justify-center items-center h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4">Summary</p>
                     </div>
                 </div>
