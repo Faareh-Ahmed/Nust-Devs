@@ -1,29 +1,33 @@
-import React from 'react';
-import './loginreg.css'
-import login from './Login'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Assuming you are using React Router
+import axios from 'axios';
+
 function Register() {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        number: '',
+        password: '',
+        confirmPassword: ''
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData({ ...formData, [name]: value });
+    };
 
     const handleRegisterSubmit = async (event) => {
         event.preventDefault();
-    
-        const { firstName, lastName, email, number, password } = event.target.elements;
-    
-        try {
-          const response = await axios.post('/api/auth/register', {
-            firstName,
-            lastName,
-            email,
-            number,
-            password,
-          });
-    
-          console.log(response.data); // Display success message or redirect
-        } catch (error) {
-          console.error(error); // Display error message
-        }
-      };
 
-      
+        try {
+            const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+            console.log(response.data); // Display success message or redirect
+        } catch (error) {
+            console.error(error); // Display error message
+        }
+    };
+
     return (
         <div>
             <div className="main-container">
@@ -31,34 +35,32 @@ function Register() {
                     <div className="heading">
                         <h1>Registration</h1>
                     </div>
-                    <form className="form-grid">
+                    <form className="form-grid" onSubmit={handleRegisterSubmit}>
                         <div className="form-input-container">
-                            <label for="firstName" className="form-input-label">First Name</label>
-                            <input type="text" id="first-name" className="form-input" placeholder="Enter your First Name" autocomplete="off" />
+                            <label htmlFor="firstName" className="form-input-label">First Name</label>
+                            <input type="text" id="firstName" name="firstName" className="form-input" placeholder="Enter your First Name" autoComplete="off" value={formData.firstName} onChange={handleChange} />
                         </div>
                         <div className="form-input-container">
-                            <label for="lastName" className="form-input-label">Last Name</label>
-                            <input type="text" id="last-name" className="form-input" placeholder="Enter your Last Name" autocomplete="off" />
+                            <label htmlFor="lastName" className="form-input-label">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" className="form-input" placeholder="Enter your Last Name" autoComplete="off" value={formData.lastName} onChange={handleChange} />
                         </div>
                         <div className="form-input-container">
-                            <label for="email" className="form-input-label">Email</label>
-                            <input type="email" id="email" className="form-input" placeholder="Enter your Email" autocomplete="off" />
+                            <label htmlFor="email" className="form-input-label">Email</label>
+                            <input type="email" id="email" name="email" className="form-input" placeholder="Enter your Email" autoComplete="off" value={formData.email} onChange={handleChange} />
                         </div>
                         <div className="form-input-container">
-                            <label for="number" className="form-input-label">Phone Number</label>
-                            <input type="tel" id="number" className="form-input" placeholder="Enter your Phone Number"
-                                pattern="[0-9{4}-[0-9]{7}]" autocomplete="off" />
+                            <label htmlFor="number" className="form-input-label">Phone Number</label>
+                            <input type="number" id="number" name="number" className="form-input" placeholder="Enter your Phone Number" autoComplete="off" pattern="[0-9]{4}-[0-9]{7}" value={formData.number} onChange={handleChange} />
                         </div>
                         <div className="form-input-container">
-                            <label for="password" className="form-input-label">Password</label>
-                            <input type="password" id="password" className="form-input" placeholder="Enter your Password"
-                                minlength="6" autocomplete="off" />
+                            <label htmlFor="password" className="form-input-label">Password</label>
+                            <input type="password" id="password" name="password" className="form-input" placeholder="Enter your Password" minLength="6" autoComplete="off" value={formData.password} onChange={handleChange} />
                         </div>
                         <div className="form-input-container">
-                            <label for="confirm-password" className="form-input-label">Confirm Password</label>
-                            <input type="password" id="confirm-password" className="form-input" placeholder="Confirm your Password" autocomplete="off" />
+                            <label htmlFor="confirmPassword" className="form-input-label">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" className="form-input" placeholder="Confirm your Password" autoComplete="off" value={formData.confirmPassword} onChange={handleChange} />
                         </div>
-                        <button type="submit" className="form-input-submit col-span-2"  onClick={handleRegisterSubmit}>Register</button>
+                        <button type="submit" className="form-input-submit col-span-2">Register</button>
                         <div className="to-login-page col-span-2">
                             <p>Already have an account? Click here to <Link to="/login">Login</Link></p>
                         </div>
