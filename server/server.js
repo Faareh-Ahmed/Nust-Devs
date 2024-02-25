@@ -13,7 +13,7 @@ app.get("/api", (req,res) => {
 	return res.send("jsdkns");
 });
 
-app.listen(5001, function (err) {
+app.listen(5000, function (err) {
 	if (err) console.log(err);
-	console.log("Server listening on PORT ", 5001);
+	console.log("Server listening on PORT ", 5000);
 });
