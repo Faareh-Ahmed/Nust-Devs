@@ -54,7 +54,7 @@ const Form = () => {
                                     required />
                             </div>
                             <button type="submit"
-                                className="form-input-submit-2 col-span-2 mt-3 bg-slate-500 py-1 shadow-2xl text-white hover:text-black font-medium">Search</button>
+                                className="form-input-submit col-span-2 mt-3 bg-slate-500 py-1 shadow-2xl text-white hover:text-black font-medium">Search</button>
                         </form>
                     </div>
                 </div>
