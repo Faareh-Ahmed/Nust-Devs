@@ -8,7 +8,7 @@ const FormLight = () => {
                 <div className=" hover:bg-slate-200 w-1/3 h-full  flex justify-center items-center">Book a Hotel</div>
                 <div className=" hover:bg-slate-200 w-1/3 h-full hover:rounded-tr-3xl flex justify-center items-center">Book a Bus</div>
             </div>
-            <div class="flex items-center justify-center flex-col px-10 py-6">
+            <div class="flex items-center justify-center flex-col px-10 py-6">  
                 <h4 class=" text-white text-center mb-4 font-black text-3xl">Choose Your Travel Destination</h4>
                 <div class="bg-white px-10 py-6 rounded-md shadow-2xl w-3/4 flex flex-row min-h-96">
                     <div class="w-1/3 bg-slate-500 mr-10 rounded-lg flex flex-col items-center text-white">

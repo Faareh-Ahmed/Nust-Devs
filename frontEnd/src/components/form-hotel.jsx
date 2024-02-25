@@ -8,8 +8,8 @@ const Form = () => {
                 <div className=" hover:bg-slate-200 w-1/3 h-full  flex justify-center items-center">Book a Flight</div>
                 <div className=" hover:bg-slate-200 w-1/3 h-full hover:rounded-tr-3xl flex justify-center items-center">Book a Bus</div>
             </div>
-            <div className="flex justify-center flex-row  h-full ">
-                <div className="w-1/4  mt-4 rounded-bl-3xl items-center   bg-slate-300  ">
+            <div className="flex justify-center flex-row  h-full">
+                <div className="w-1/4 rounded-bl-3xl items-center bg-slate-300  ">
                     <div className="steps h-1/4 hover:bg-slate-200">
                         <p className="steps-p ml-4 pr-3 ">Hotels Information</p>
                     </div>
